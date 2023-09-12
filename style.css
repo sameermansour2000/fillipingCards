@@ -1,11 +1,13 @@
-.cards-section {
-    margin: 75px 50px;
-    padding: 50px 0;
+main{
+    margin: 75px 50px 0px 50px;
+    padding: 50px 0px;
     background-color: rgb(211, 211, 211);
+}
+.cards-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     transition: all 1s ease;
 }
 .card {
@@ -36,20 +38,23 @@
 {
     display: none;
 }
-
 .card:hover {
     transform: rotateY(-180deg);
 }
-.cards-section:hover .card-container {
+main:hover .card-container {
     transform: rotateY(-180deg);
     transition: all 1s ease;
 }
+/* .cards-section:hover .card-container {
+    transform: rotateY(-180deg);
+    transition: all 1s ease;
+} */
 
-.cards-section:hover .card-front {
+main:hover .card-front {
     display: none;
 }
 
-.cards-section:hover .card:hover .card-front
+main:hover .card:hover .card-front
 {
     display:grid;
 }
